@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: ignite-project-clean
+    name: ignite-project
     env: java
-    rootDir: .
-    buildCommand: "chmod +x mvnw && ./mvnw clean package -DskipTests"
+    buildCommand: "./mvnw clean package -DskipTests"
     startCommand: "java -jar target/*.jar"
     plan: free
